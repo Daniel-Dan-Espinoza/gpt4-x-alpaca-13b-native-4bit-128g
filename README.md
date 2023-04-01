@@ -1,4 +1,14 @@
-(untested)
+Update: Okay... Two different models now. One generated in the Triton branch, one generated in Cuda. Use the Cuda one for now unless the Triton branch becomes widely used.
+Cuda info (use this one):
+Command: 
+CUDA_VISIBLE_DEVICES=0 python llama.py ./models/chavinlo-gpt4-x-alpaca
+--wbits 4 
+--true-sequential 
+--groupsize 128 
+--save gpt-x-alpaca-13b-native-4bit-128g-cuda.pt
+
+
+Prev. info
 GPTQ 4bit quantization of: https://huggingface.co/chavinlo/gpt4-x-alpaca
 Note: This was quantized with this branch of GPTQ-for-LLaMA: https://github.com/qwopqwop200/GPTQ-for-LLaMa/tree/triton
 Because of this, it appears to be incompatible with Oobabooga at the moment. Stay tuned?
