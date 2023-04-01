@@ -1,10 +1,18 @@
-Update: Okay... Two different models now. One generated in the Triton branch, one generated in Cuda. Use the Cuda one for now unless the Triton branch becomes widely used.
+Update: 
+
+Okay... Two different models now. One generated in the Triton branch, one generated in Cuda. Use the Cuda one for now unless the Triton branch becomes widely used.
+
 Cuda info (use this one):
 Command: 
+
 CUDA_VISIBLE_DEVICES=0 python llama.py ./models/chavinlo-gpt4-x-alpaca
+
 --wbits 4 
+
 --true-sequential 
+
 --groupsize 128 
+
 --save gpt-x-alpaca-13b-native-4bit-128g-cuda.pt
 
 
