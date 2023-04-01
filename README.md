@@ -1,4 +1,5 @@
-Update: 
+
+Update (4/1): Added ggml for Cuda model
 
 Okay... Two different models now. One generated in the Triton branch, one generated in Cuda. Use the Cuda one for now unless the Triton branch becomes widely used.
 
