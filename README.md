@@ -9,6 +9,7 @@ CUDA_VISIBLE_DEVICES=0 python llama.py ./models/chavinlo-gpt4-x-alpaca
 
 
 Prev. info
+Quantized on GPTQ-for-LLaMa commit 5955e9c67d9bfe8a8144ffbe853c2769f1e87cdd
 GPTQ 4bit quantization of: https://huggingface.co/chavinlo/gpt4-x-alpaca
 Note: This was quantized with this branch of GPTQ-for-LLaMA: https://github.com/qwopqwop200/GPTQ-for-LLaMa/tree/triton
 Because of this, it appears to be incompatible with Oobabooga at the moment. Stay tuned?
