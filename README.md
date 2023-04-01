@@ -5,12 +5,7 @@ Okay... Two different models now. One generated in the Triton branch, one genera
 Cuda info (use this one):
 Command: 
 
-CUDA_VISIBLE_DEVICES=0 python llama.py ./models/chavinlo-gpt4-x-alpaca
-
---wbits 4 
---true-sequential 
---groupsize 128 
---save gpt-x-alpaca-13b-native-4bit-128g-cuda.pt
+CUDA_VISIBLE_DEVICES=0 python llama.py ./models/chavinlo-gpt4-x-alpaca --wbits 4 --true-sequential --groupsize 128 --save gpt-x-alpaca-13b-native-4bit-128g-cuda.pt
 
 
 Prev. info
@@ -25,10 +20,4 @@ Because of this, it appears to be incompatible with Oobabooga at the moment. Sta
 
 Command: 
 
-CUDA_VISIBLE_DEVICES=0 python llama.py ./models/chavinlo-gpt4-x-alpaca
-
---wbits 4 
---true-sequential 
---act-order 
---groupsize 128 
---save gpt-x-alpaca-13b-native-4bit-128g.pt
+CUDA_VISIBLE_DEVICES=0 python llama.py ./models/chavinlo-gpt4-x-alpaca --wbits 4 --true-sequential --act-order --groupsize 128 --save gpt-x-alpaca-13b-native-4bit-128g.pt
