@@ -1,3 +1,4 @@
+(untested)
 GPTQ 4bit quantization of: https://huggingface.co/chavinlo/gpt4-x-alpaca
 
 Command: 
