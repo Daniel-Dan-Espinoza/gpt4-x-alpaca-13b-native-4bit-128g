@@ -1,5 +1,7 @@
 (untested)
 GPTQ 4bit quantization of: https://huggingface.co/chavinlo/gpt4-x-alpaca
+Note: This was quantized with this branch of GPTQ-for-LLaMA: https://github.com/qwopqwop200/GPTQ-for-LLaMa/tree/triton
+Because of this, it appears to be incompatible with Oobabooga at the moment. Stay tuned?
 
 Command: 
 CUDA_VISIBLE_DEVICES=0 python llama.py ./models/chavinlo-gpt4-x-alpaca
